@@ -1,9 +1,13 @@
 🔗 Working Demo
+
 Check out the live working demo of the project here:
+
 👉 Live Demo Link : https://drive.google.com/file/d/1YvbqgHF7Lin6K18phnt4FEL-1NeytNAo/view?usp=sharing
 
 📂 Dataset Information
+
 📥 Download
+
 The dataset used in this project can be downloaded from Kaggle:
 🔗 Municipal Solid Waste Dataset on Kaggle
 
