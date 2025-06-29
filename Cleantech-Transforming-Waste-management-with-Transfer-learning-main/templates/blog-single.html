@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f9fc;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 40px;
+      color: #274472;
+    }
+
+    .intro-text {
+      max-width: 800px;
+      margin: 20px auto 10px;
+      text-align: center;
+      font-size: 18px;
+      color: #444;
+      padding: 0 20px;
+    }
+
+    .success-message {
+      text-align: center;
+      font-size: 18px;
+      color: #2b6cb0;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .form-section {
+      max-width: 600px;
+      margin: 10px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .form-section input,
+    .form-section textarea {
+      width: 90%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-section textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    .form-section button {
+      background-color: #4169e1;
+      color: white;
+      padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-section button:hover {
+      background-color: #3551b5;
+    }
+
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .detail-item {
+      text-align: center;
+      font-size: 16px;
+      color: #274472;
+    }
+
+    .detail-item i {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 10px;
+      color: #4169e1;
+    }
+  </style>
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <h1>Contact</h1>
+
+  <div class="intro-text">
+    <p>
+      Reach out to us for more information about our services.
+    </p>
+  </div>
+
+  {% if success %}
+    <div class="success-message">Your message was sent successfully!</div>
+  {% endif %}
+
+  <div class="form-section">
+    <form action="/contact" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <div class="contact-details">
+    <div class="detail-item">
+      <i class="fas fa-map-marker-alt"></i>
+      Location<br>
+      Vijayawada, Andhra Pradesh
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-envelope"></i>
+      Email<br>
+      wasteinfo@example.com
+    </div>
+    <div class="detail-item">
+      <i class="fas fa-phone"></i>
+      Call<br>
+      +91 98765 43210
+    </div>
+  </div>
+
+</body>
+</html>

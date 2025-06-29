@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waste Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+     background-image: url("{{ url_for('static', filename='assets/recycling-program-green-waste-management-260nw-2461809723.webp') }}");
+      background-size: cover;
+      background-position: fill;
+      color: #333;
+      height: 800px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: rgba(255, 255, 255, 0.6);
+      height: 60px;
+    }
+
+    .logo {
+  display: flex;
+  align-items: center;
+   gap: 10px;
+}
+
+.logo-img {
+  height: 110px;
+  width: 80px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.logo-text {
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  line-height: 0;
+  margin-top: 14px;
+}
+
+    .nav-links a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .center-content {
+      text-align: center;
+      padding: 60px 20px;
+      color: #000;
+      top: 10%;
+    }
+
+    .center-content h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 20px;
+      font-style: bold italic;
+      background-color: #97d8ea;
+      color: rgb(5, 3, 3);
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #cce5ec;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+  <img src="{{ url_for('static', filename='Cleantech-Transforming-Waste-management-with-Transfer-learning-main/static/assets/logo.png') }}" alt="Logo" class="logo-img">
+  <span class="logo-text">Waste Management</span>
+</div>
+    <div class="nav-links">
+      <a href="/predict">Predict</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </header>
+
+  <div class="center-content">
+    <h1>Smart Waste Classification for a Cleaner Tomorrow</h1>
+    <h5>Our AI-powered system helps identify biodegradable, recyclable, and non-recyclable waste efficiently.</h5>
+    <br>
+    <a href="/predict"><button class="btn">Get Started</button></a>
+  </div>
+
+</body>
+</html>
+
+

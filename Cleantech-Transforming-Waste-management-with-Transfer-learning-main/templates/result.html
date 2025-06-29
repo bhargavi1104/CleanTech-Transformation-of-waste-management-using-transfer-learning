@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f4fdf7;
+    }
+
+    img {
+      width: 300px;
+      margin-top: 20px;
+      border: 2px solid #28a745;
+      border-radius: 10px;
+    }
+
+    .result {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    .back-link {
+      margin-top: 30px;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .back-link:hover {
+      background-color: #1c6330;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Prediction Result</h1>
+  <img src="{{ image_path }}" alt="Uploaded Image">
+  <div class="result">
+    Predicted Waste Type: {{ prediction | upper }}
+  </div>
+  <a class="back-link" href="/predict">Predict Another</a>
+
+</body>
+</html>
